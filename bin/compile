@@ -7,7 +7,8 @@ ENV_DIR=$3
 cd $BUILD_DIR
 # download the minimal mysql tar file
 echo "------> Downloading minimized tarball"
-wget https://raw.githubusercontent.com/gaumire/mysql-binary/master/mysql.tar.gz
+wget https://github.com/starck-enterprises/mysql-binary/blob/master/mysql.tar.gz
+
 # make a directory to untar (like unzip) the binary
 mkdir -p $BUILD_DIR/.heroku/vendor/mysql
 # untar the binary to a directory inside /app/.heroku
